@@ -6,9 +6,10 @@
   <title>Teste RA — A-Frame + AR.js</title>
   <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.5/aframe/build/aframe-ar.min.js"></script>
-  <style>body{margin:0;overflow:hidden}</style>
+  <style>body{margin:0;overflow:hidden} .tip{position:fixed;left:8px;bottom:8px;background:#000a;color:#fff;padding:8px 10px;border-radius:8px;font:14px system-ui}</style>
 </head>
 <body>
+  <div class="tip">Autorize a câmera. Mostre um marcador HIRO (em outra tela ou impresso).</div>
   <a-scene embedded arjs="sourceType: webcam; debugUIEnabled:false">
     <a-marker preset="hiro">
       <a-sphere position="0 0.35 0" radius="0.08" color="#00c2ff"
